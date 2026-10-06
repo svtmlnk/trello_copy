@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader tasks</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+
+    <script src="./scripts/tinymce/tinymce.min.js"></script>
+</head>
+
+<body>
+    <div class="board">
+        <ul class="columns-list"></ul>
+
+        <div class="add_column">
+            <span>Добавить колонку</span>
+
+            <form style="display: none;">
+                <input type="text" id="add_column_value" placeholder="Введите название">
+                <div class="form-options">
+                    <button id="submit" type="submit">Добавить</button>
+                    <i class="cancel fal fa-times"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/colorChange.js"></script>
+    <script src="./scripts/sortCards.js"></script>
+    <script src="./scripts/modalWindow.js"></script>
+    <script src="./scripts/dragAndDrop.js"></script>
+    <script src="./scripts/secondDragAndDrop.js"></script>
+
+    <!-- <script>
+        document.body.addEventListener('click', (e) => {
+            console.log(e.target)
+        })
+    </script> -->
+</body>
+
+</html>
